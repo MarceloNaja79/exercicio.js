@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Manipulação com JS</title>
+</head>
+
+<body style="font-family: Arial; text-align: center; margin-top: 50px,">
+    <h1 id="titulo">Bem vindo à minha Página</h1>
+    <p id="descricao">Clique no botão abaixo para mudar o texto e a cor.</p>
+
+    <button id="botao"> Clique Aqui</button>
+
+    <script>
+        //Pegando os elementos do HTML
+        const titulo = document.getElementById("titulo");
+        const descricao = document.getElementById("descricao");
+        const botao = document.getElementById("botao");
+
+        //Adicionando o evento de clique 
+        botao.addEventListener("click", function () {
+            titulo.innerText = "Título Alterado!";
+            titulo.style.color = "blue";
+
+            descricao.innerText = "Agora o titulo e o texto modificados pelo JavaScript.";
+            descricao.getElementsByClassName.color = "green";
+        });
+    </script>
+</body>
+
+</html>
